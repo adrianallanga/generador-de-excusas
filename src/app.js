@@ -20,5 +20,9 @@ window.onload = function() {
   let whos = who[Math.floor(Math.random() * who.length)];
   let actions = action[Math.floor(Math.random() * action.length)];
   let whats = what[Math.floor(Math.random() * what.length)];
-  console.log(whos + " " + actions + " " + whats);
+
+  let excuse = `${whos} ${actions} ${whats} `;
+
+  let excuseElement = document.getElementById("excusa");
+  excuseElement.textContent = excuse;
 };
